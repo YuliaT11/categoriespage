@@ -12,7 +12,7 @@ import './index.scss'
 const CategoryCard = (props) => {
     return (
         <div className="categories-page-categories__wrapper-card">
-            <Link to={`/category/${props.categoryName.toLowerCase()}`}>
+            <Link to={`/category/${props.categoryName.toLowerCase().replaceAll(' ', '')}`}>
                 <h3 className="categories-page-categories__wrapper-card__title">{props.categoryName}</h3>
             </Link>
             <div className="categories-page-categories__wrapper-card__image">
@@ -34,7 +34,7 @@ const CategoryCard = (props) => {
                         props.subcategories.map((item, index) =>
                             <li key={index}>
                                 <Link
-                                    to={`/products/category/${item.name.toLowerCase()}`}
+                                    to={`/products/category/${item.name.toLowerCase().replaceAll(' ', '')}`}
                                 >
                                     {item.name}
                                 </Link>
