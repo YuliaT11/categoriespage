@@ -1,0 +1,22 @@
+.categories-page-manufacturers__wrapper-card {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: '';
+    width: 104px;
+    height: 104px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    transform: rotate(-45deg);
+    position: absolute;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+    z-index: -1;
+    top: 0;
+  }
+}

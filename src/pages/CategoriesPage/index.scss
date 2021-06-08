@@ -1,0 +1,366 @@
+@import '../../assets/SCSS/styles';
+
+.categories-page {
+  overflow: hidden;
+
+  &-section__article {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #20374F;
+    margin: 40px 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 23px;
+    }
+  }
+
+  &__container {
+    padding: 0 10%;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0 10.4%;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+
+  &-header {
+    background: url("https://tradefy.s3.amazonaws.com/images/Light+Blue+Background.svg");
+    height: 693px;
+    display: flex;
+    align-items: center;
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 2;
+      width: 51%;
+      height: 100%;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        width: 100%;
+      }
+
+      h3 {
+        color: #F36B32;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        @media screen and (max-width: 768px) {
+          background: white;
+        }
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 56px;
+        color: #20374F;
+        line-height: 64px;
+        margin: 15px 0 16px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 40px;
+        }
+      }
+
+      h4 {
+        font-size: 22px;
+        line-height: 30px;
+        color: #20374F;
+        font-weight: normal;
+
+        @media screen and (max-width: 768px) {
+          font-size: 17px;
+        }
+      }
+
+      img {
+        position: absolute;
+        left: 214px;
+        top: -63px;
+        transform: scale(0.8);
+
+        @media screen and (min-width: 320px) {
+          left: -100%;
+          top: -30%;
+          z-index: -1;
+          opacity: 0.5;
+          transform: scale(0.5);
+        }
+
+        @media screen and (min-width: 642px) {
+          left: 82px;
+          top: -102px;
+          transform: scale(0.6);
+          opacity: 1;
+        }
+
+        @media screen and (min-width: 1440px) {
+          left: 214px;
+          top: -63px;
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+
+  &-categories {
+    position: relative;
+
+    .bg-icon {
+      position: absolute;
+      z-index: 1;
+      top: 45px;
+      left: 110px
+    }
+
+    &__wrapper {
+      display: grid;
+
+      @media screen and (min-width: 320px) {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(5, auto);
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-between;
+      }
+
+      @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+      }
+
+      @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(1, auto);
+      }
+
+    }
+  }
+
+  &-info {
+    margin: 100px 0 160px;
+    position: relative;
+
+    .bg-icon {
+      position: absolute;
+
+      &-one {
+        left: 30%;
+        bottom: -21%;
+      }
+
+      &-two {
+        top: -10%;
+        left: 40%;
+      }
+
+      &-three {
+        left: 78%;
+        bottom: 10%;
+      }
+
+      &-four {
+        right: 26%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      &-column {
+        width: 50%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        &__image {
+          background: white;
+          width: 400px;
+          height: 348px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          img {
+            width: 324px;
+          }
+
+          .icon-bg-blu {
+            position: absolute;
+            z-index: -1;
+            right: -38px;
+            top: -35px;
+            left: -67px;
+          }
+        }
+
+        &__title {
+          background: white;
+          color: #F36B32;
+          border-radius: 8px;
+          max-width: 493px;
+          position: relative;
+
+          h3 {
+            margin: 0;
+            font-size: 22px;
+            line-height: 30px;
+            padding: 24px 20px 24px 13px;
+          }
+
+          .icon-bg-org {
+            position: absolute;
+            z-index: -1;
+            right: -38px;
+            top: -8px;
+          }
+        }
+
+        &__description {
+          p {
+            max-width: 411px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.025em;
+            margin-left: 45px;
+          }
+        }
+      }
+    }
+  }
+
+  &-manufacturers {
+
+    &__wrapper {
+      display: grid;
+      margin-top: 45px;
+
+      @media screen and (min-width: 320px) {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(7, 160px);
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, 160px);
+        justify-content: space-between;
+      }
+
+      @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, 160px);
+      }
+
+      @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(7, auto);
+        grid-template-rows: repeat(1, auto);
+      }
+    }
+  }
+
+  &-contacts {
+    margin-top: 135px;
+    background: url("https://tradefy.s3.amazonaws.com/images/Map+back+ground.svg");
+    padding: 99px 0 132px 0;
+    background-size: cover;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 0;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: bold;
+      color: #20374F;
+      font-size: 56px;
+      line-height: 64px;
+      margin-bottom: 108px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      padding: 0 16.4%;
+
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 450px) {
+        padding: 0 20px;
+      }
+
+      &-details {
+        margin: 51px 0 0 90px;
+        max-width: 451px;
+
+        @media screen and (max-width: 1024px) {
+          margin: 51px 0 0 0;
+        }
+
+        p {
+          color: #20374F;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 28px;
+          letter-spacing: -0.02em;
+          margin: 0 0 91px;
+        }
+
+        div {
+          margin-bottom: 18px;
+          display: flex;
+
+          svg {
+            width: 50px;
+          }
+
+          a {
+            font-size: 20px;
+            line-height: 28px;
+            color: #20374F;
+            text-decoration: none;
+
+            @media screen and (max-width: 1024px) {
+              font-size: 16px
+            }
+
+            &:hover {
+              color: #F36B32;
+            }
+          }
+        }
+      }
+    }
+  }
+}

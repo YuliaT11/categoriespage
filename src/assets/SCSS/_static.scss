@@ -1,0 +1,34 @@
+@mixin carousel-styles {
+  .react-multiple-carousel__arrow {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    outline: none !important;
+    bottom: 0;
+
+    &:before {
+      color: #111842;
+    }
+  }
+
+  .react-multi-carousel-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      background: #c8c8c8;
+      border: none;
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .react-multi-carousel-dot--active {
+    button {
+      background: #656565 !important;
+      border-color: #656565 !important;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
