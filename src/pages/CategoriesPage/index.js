@@ -29,7 +29,7 @@ const CategoriesPage = () => {
     useEffect(() => {
         axios.request({
             method: 'get',
-            url: 'http://product.masonryorderdesk.ca/services/product/api/categories'
+            url: 'https://product.masonryorderdesk.ca/services/product/api/categories'
         }).then(res => setCategories(res.data))
     }, [])
 
