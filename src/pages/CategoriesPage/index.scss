@@ -17,6 +17,8 @@
 
   &__container {
     padding: 0 10%;
+    max-width: 1440px;
+    margin: 0 auto;
 
     @media screen and (min-width: 1024px) {
       padding: 0 10.4%;
@@ -148,8 +150,11 @@
     }
   }
 
+  &-info.categories-page__container {
+    margin: 100px auto 160px;
+  }
+
   &-info {
-    margin: 100px 0 160px;
     position: relative;
 
     .bg-icon {
