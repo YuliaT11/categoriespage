@@ -35,8 +35,8 @@ const CategoriesPage = () => {
 
     return (
         <div className="categories-page">
-            <header className="categories-page-header categories-page__container">
-                <div className="categories-page-header__content">
+            <header className="categories-page-header">
+                <div className="categories-page-header__content categories-page__container">
                     <h3>Shop Building Materials Online</h3>
                     <h1>Shop Local <br/> Building Materials</h1>
                     <h4>Search by Manufacterers, Syles, Colous Availability & More</h4>
