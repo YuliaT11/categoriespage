@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router';
 
-import CategoriesPage from './pages/CategoriesPage';
+import MainPage from './pages/MainPage';
+import './assets/SCSS/styles.scss';
 
 const App = () => {
     return (
         <BrowserRouter>
-            <Route path="/" component={CategoriesPage} />
+            <Route exact path="/" component={MainPage} />
         </BrowserRouter>
     )
 };
